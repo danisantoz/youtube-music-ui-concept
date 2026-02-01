@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Music • Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="logo">
+      <span class="logo-icon">▶</span>
+      <span class="logo-text">Music</span>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Pesquisar músicas, álbuns ou artistas">
+    </div>
+
+    <div class="profile">
+      <div class="avatar">U</div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <section class="genres">
+      <h2>Explorar</h2>
+
+      <div class="genres-grid">
+        <div class="genre-card" data-title="Pop">
+          <img src="img/pop.jpg" alt="Pop">
+          <button class="play-btn">▶</button>
+          <span>Pop</span>
+        </div>
+
+        <div class="genre-card" data-title="Hip-Hop">
+          <img src="img/hip-hop.jpg" alt="Hip-Hop">
+          <button class="play-btn">▶</button>
+          <span>Hip-Hop</span>
+        </div>
+
+        <div class="genre-card" data-title="Eletrônica">
+          <img src="img/electronic.jpg" alt="Eletrônica">
+          <button class="play-btn">▶</button>
+          <span>Eletrônica</span>
+        </div>
+
+        <div class="genre-card" data-title="Rock">
+          <img src="img/rock.jpg" alt="Rock">
+          <button class="play-btn">▶</button>
+          <span>Rock</span>
+        </div>
+
+        <div class="genre-card" data-title="R&B">
+          <img src="img/rnb.jpg" alt="R&B">
+          <button class="play-btn">▶</button>
+          <span>R&B</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Player -->
+  <footer class="player">
+    <div class="player-info">
+      <strong id="player-title">Nada tocando</strong>
+      <span>Playlist</span>
+    </div>
+
+    <div class="player-controls">
+      <button>⏮</button>
+      <button class="play-main">▶</button>
+      <button>⏭</button>
+    </div>
+
+    <div class="player-extra">
+      <span>🔊</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

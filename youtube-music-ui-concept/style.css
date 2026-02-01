@@ -1,0 +1,139 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding-bottom: 90px;
+}
+
+/* Top Bar */
+.top-bar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  display: flex;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.logo-icon {
+  background: #ff0000;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.search-box input {
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+/* Main */
+.container {
+  padding: 24px;
+}
+
+.genres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.genre-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.genre-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.genre-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Play Button */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ff0000;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.genre-card:hover .play-btn {
+  opacity: 1;
+}
+
+.genre-card span {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0,0,0,0.6);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+/* Player */
+.player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-top: 1px solid #222;
+}
+
+.player-controls button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.play-main {
+  font-size: 26px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .search-box {
+    display: none;
+  }
+}
+
+
+
