@@ -10,5 +10,4 @@ Clone de interface inspirado no YouTube Music, desenvolvido com foco em UI/UX e 
 ## Objetivo
 Projeto criado para praticar construção de interfaces modernas e publicação de projetos no GitHub.
 
-📌 Status
-Finalizado
+
